@@ -12,23 +12,34 @@
 
 # Server files
 hub/*
-!hub/bukkit.yml
-!hub/paper.yml
-!hub/spigot.yml
 Server*/*
 proxy_server/*
 !*/start.bat
 !*/*.jar
-Server*/minecraft_server.1.12.2.jar
 !*/eula.txt
 !*/server.properties
-!proxy_server/velocity.toml
-!proxy_server/forwarding.secret
+!*/plugins
+*/plugins/*
+!*/mods
+*/mods/*
+
+#hub
+!hub/bukkit.yml
+!hub/paper.yml
+!hub/spigot.yml
+
+#Server
+Server*/minecraft_server.1.12.2.jar
 !Server*/config
 Server*/config/sponge/*
 !Server*/config/sponge/global.conf
 !Server*/world
 Server*/world/*
 !Server*/world/setlink.bat
+
+#proxy
+!proxy_server/velocity.toml
+!proxy_server/forwarding.secret
+
 # GlobalData
 GlobalData/*/*
