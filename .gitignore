@@ -12,6 +12,9 @@
 
 # Server files
 hub/*
+!hub/bukkit.yml
+!hub/paper.yml
+!hub/spigot.yml
 Server*/*
 proxy_server/*
 !*/start.bat
